@@ -1,0 +1,29 @@
+--- Theft Detection Algorithm Report ---
+
+Data Preprocessing:
+- Dataset path: /content/Theft detection
+- Frame skip: 30 frames
+- Target frame size: (224, 224)
+
+Model Building:
+- CNN model architecture: 
+  - Input Layer: Conv2D with 32 filters and relu activation
+  - MaxPooling Layer: MaxPooling2D with (2, 2) pool size
+  - Conv2D Layer: Conv2D with 64 filters and relu activation
+  - MaxPooling Layer: MaxPooling2D with (2, 2) pool size
+  - Flatten Layer
+  - Dense Layer: 64 units with relu activation
+  - Output Layer: Dense Layer with sigmoid activation
+
+Evaluation Results:
+- Accuracy: 0.9502617801047121
+- Precision: 0.9668508287292817
+- Recall: 0.9308510638297872
+- F1 Score: 0.9485094850948509
+- Confusion Matrix:
+[[188   6]
+ [ 13 175]]
+
+Discussion:
+- The CNN model achieved good accuracy, precision, recall, and F1 score in detecting shoplifting activities.
+
